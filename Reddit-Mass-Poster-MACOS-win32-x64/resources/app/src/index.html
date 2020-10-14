@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Youtube Advert</title>
+    <link rel="stylesheet" href="index.css">
+        <script type="module" defer src="./bundle.js"></script>
+        <script async src="./getVideos.js"></script>
+
+  </head>
+  <body>
+    <h1><img src="./assets/icons/48.png">Youtube Advert</h1>
+    <div class="col-sm-6">
+     <div class="omrs-input-group">
+      <label class="omrs-input-underlined">
+        <input type="text" class="form-control link" name="name" id='clientSecret' required /> <span
+          class="omrs-input-label">Reddit Client Secret</span>
+        <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+                  </div>
+      </label>
+    </div>
+    <div class="omrs-input-group">
+      <label class="omrs-input-underlined">
+        <input type="text" class="form-control link" name="name" id='ClientId' required /> <span
+          class="omrs-input-label">Reddit Client id</span>
+        <div class="fa ic fa-mask" width="24" height="24" viewBox="0 0 24 24">
+                  </div>
+      </label>
+    </div>
+   <div class="omrs-input-group">
+      <label class="omrs-input-underlined">
+        <input type="text" class="form-control link" name="name" id='username' required /> <span
+          class="omrs-input-label">Reddit Username</span>
+        <div class="fa ic fa-user" width="24" height="24" viewBox="0 0 24 24">
+                  </div>
+      </label>
+    </div>
+     <div class="omrs-input-group">
+      <label class="omrs-input-underlined">
+        <input type="password" class="form-control link" name="name" id='password' required /> <span
+          class="omrs-input-label">Reddit Password</span>
+        <div class="fa ic fa-key" width="24" height="24" viewBox="0 0 24 24">
+                  </div>
+      </label>
+    </div>
+<!-- 
+        <fieldset id="group1">
+
+    <input type="radio" name="group1" class="rd" onchange="PostLink()"> Post Any Link<br>
+    <input type="radio" name="group1" onchange="PostingVideos()"> Post Youtube Channel Video<br>
+        </fieldset> -->
+        </div>
+   <div class="omrs-input-group col-sm-6">
+     <label class="omrs-input-underlined">
+       <input type="text" class="form-control link" id="titlelink" name="name" /> <span
+         class="omrs-input-label">Title</span>
+     </label>
+   </div>
+     <div class="omrs-input-group col-sm-6" >
+       <label class="omrs-input-underlined">
+         <input type="text" class="form-control link" id="postlink" name="name" /> <span
+           class="omrs-input-label">Link</span>
+         <div class="fa ic fa-link" width="24" height="24" viewBox="0 0 24 24">
+         </div>
+       </label>
+     </div>   
+
+      <div class="omrs-input-group">
+        <label class="omrs-input-underlined">
+          <input type="input" class="form-control subreddits" onchange="AddBtn()" name="name" id='subredditslink' />
+          <span
+            class="omrs-input-label">Subreddits to post(seperated by spaces)</span>
+          <div class="fab fa-reddit fa-2x" id="subrbtn1" onclick="download()" width="24" height="24" viewBox="0 0 24 24">
+          </div>
+        </label>
+
+        <br>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input type="input" class="form-control subreddits" onchange="AddLinkBtn()" name="name"
+              id='subredditspathlink' />
+            <span class="omrs-input-label">Enter the path to the subreddit txt file</span>
+            <div class="fas fa-file-upload fa-2x" id="btnsub1" onclick="readTextFile()" width="24" height="24"
+              viewBox="0 0 24 24">
+            </div>
+          </label>
+        </div>
+    </div>
+    <div id="postLink"></div>
+        <!-- <div id="postVid"> 
+          <div class="omrs-input-group">
+            <label class="omrs-input-underlined">
+              <input type="input" onchange="getVideos()" class="form-control link" name="name" id='link' required />
+              <span class="omrs-input-label">Channel Link</span>
+              <div class="fa ic fa-link" width="24" height="24" viewBox="0 0 24 24">
+              </div>
+            </label>
+          </div> <i id="errormsg">Please Enter a Correct Channel Link</i>
+    <div class="row channelInfo">
+     <h4>Recent Videos: <i onclick="getVideos()" class="fas fa-sync-alt"></i></h4>
+     <hr>
+      <div class="col-sm-12 container">
+        <br>
+        			
+
+        <div class="col-sm-12 videos">
+                
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+  
+  <div class="omrs-input-group">
+    <label class="omrs-input-underlined">
+      <input type="input" class="form-control subreddits" name="name" id='subreddits'
+        required /> <span
+        class="omrs-input-label">Subreddits to post(seperated by spaces)</span>
+      <div class="fab fa-reddit fa-2x" id="subrbtn" onclick="download()" width="24" height="24" viewBox="0 0 24 24">
+      </div>
+    </label>
+    
+<br>
+<div class="omrs-input-group">
+  <label class="omrs-input-underlined">
+    <input type="input" class="form-control subreddits" name="name" id='subredditspath'
+      required />
+    <span class="omrs-input-label">Enter the path to the subreddit txt file</span>
+    <div class="fas fa-file-upload fa-2x" id="btnsub" onclick="readTextFile()" width="24" height="24"
+      viewBox="0 0 24 24">
+    </div>
+  </label>
+      </div>
+      </div> -->
+
+  </body>
+</html>

@@ -1,0 +1,298 @@
+/* @import '../node_modules/bulma/css/bulma.min.css'; */
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding: 2rem;
+    background-color: transparent;
+    color: black;
+
+}
+html{
+  background-color: #ffffff;
+
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+.container{
+    height: 90vh;
+  border: solid #ffffff;
+  
+  border-radius: 5px;
+  border-width: 2px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.videos::-webkit-scrollbar{
+  width: 5px;
+}
+.videos::-webkit-scrollbar-thumb {
+  background-color: #C8CDD0;
+}
+
+.videos::-webkit-scrollbar-track {
+  background-color: rgb(136, 136, 136);
+  border-radius: 1px;
+}
+.videos::-webkit-scrollbar-track:hover {
+  background-color: rgb(63, 61, 61);
+}
+.container::-webkit-scrollbar{
+overflow: hidden;}
+.videos{
+  overflow:scroll;
+  overflow-x: hidden;
+}
+h5{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.subcontainer{
+  border: white solid 1px;
+  display: block;
+}
+.advertisebtn {
+margin-top: 3.5%;
+float: right;
+margin-right: 5px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#btnsub{
+  display: none;
+}
+.subcontainer:hover{
+ background-color: rgba(128, 128, 128, 0.438);
+}.subcontainer{ 
+  transition: all .2s ease-in-out;
+}
+button{
+  background-color: #f00719 !important;
+}
+/** BEGIN: Non Openmrs CSS **/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto";
+}
+
+
+:root {
+  --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+  --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+  --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+  --omrs-color-interaction: #1e4bd1;
+  --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+  --omrs-color-danger: #b50706;
+  --omrs-color-bg-low-contrast: #eff1f2;
+  --omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: #ffffff;
+
+}
+
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+}
+
+/* Input*/
+.omrs-input-underlined>input,
+.omrs-input-filled>input {
+  border: none;
+  border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+  width: 100%;
+  height: 2rem;
+  font-size: 1.0625rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined>input:focus,
+.omrs-input-filled>input:focus {
+  outline: none;
+}
+
+.omrs-input-underlined>.omrs-input-label,
+.omrs-input-filled>.omrs-input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 147.6%;
+  color: var(--omrs-color-ink-medium-contrast);
+  transition: top .2s;
+}
+
+.omrs-input-underlined>svg,
+.omrs-input-filled>svg {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.875rem;
+  fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined>.omrs-input-helper,
+.omrs-input-filled>.omrs-input-helper {
+  font-size: 0.9375rem;
+  color: var(--omrs-color-ink-medium-contrast);
+  letter-spacing: 0.0275rem;
+  margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined>input:hover,
+.omrs-input-filled>input:hover {
+  background: var(--omrs-color-interaction-minus-two);
+  border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined>input:focus+.omrs-input-label,
+.omrs-input-underlined>input:valid+.omrs-input-label,
+.omrs-input-filled>input:focus+.omrs-input-label,
+.omrs-input-filled>input:valid+.omrs-input-label {
+  top: 0;
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+  ;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus+.omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger)>input:focus+.omrs-input-label {
+  color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus,
+.omrs-input-filled:not(.omrs-input-danger)>input:focus {
+  border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)>input:focus~svg,
+.omrs-input-filled:not(.omrs-input-danger)>input:focus~svg {
+  fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined>input:disabled {
+  background: var(--omrs-color-bg-low-contrast);
+  cursor: not-allowed;
+}
+
+.omrs-input-underlined>input:disabled+.omrs-input-label,
+.omrs-input-underlined>input:disabled~.omrs-input-helper {
+  color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined>input:disabled~svg {
+  fill: var(--omrs-color-ink-low-contrast);
+}
+.ic{
+  position: absolute;
+  top: 26px;
+  display: inline;
+  left: 90%;
+}
+.fa-reddit{
+    position: absolute;
+    left: 150%;
+    bottom: 60%;
+    display: none;
+}
+input[type="submit"]{
+   font-family: FontAwesome;
+   font-size: 1.3333333333333333em;
+}
+#group1{
+  border: none;
+}
+.submit{
+     height:32px;
+     width:32px;
+     border: none;
+     cursor: pointer;
+     color:white;
+     background-color:black;
+     position:relative;
+}
+.link{
+  display: inline;
+}
+.subreddits {
+  width: 90vh !important;
+  height: 25px;
+}
+.fa-file-upload{
+  position: absolute;
+  left: 150%;
+  bottom: 10%;
+  display: none;
+}
+.fa-reddit:hover{
+  cursor: pointer;
+}
+.fa-file-upload:hover{
+  cursor: pointer;
+}
+#errormsg{
+  color: red;
+  display: none;
+}
+#postVid{
+visibility: hidden;
+}
+
+.fa-play-circle:hover{
+  cursor: pointer;
+}
+.fa,.fas, .fab{
+  color: #fc334a;
+}

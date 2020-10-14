@@ -1,0 +1,2 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+YoutubeAdvertMACOS-darwin-x64/YoutubeAdvertMACOS.app/Contents/Resources/app/YoutubeAdvert-win32-x64/YoutubeAdvert.exe filter=lfs diff=lfs merge=lfs -text
